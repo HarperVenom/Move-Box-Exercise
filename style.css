@@ -1,0 +1,41 @@
+.switch {
+  width: 100px;
+  height: 50px;
+  border-radius: 100px;
+  border: 5px solid black;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  margin: 1rem auto;
+  cursor: pointer;
+
+  transition: justify-content 1s ease;
+}
+
+.switch-pin {
+  width: 32px;
+  height: 32px;
+  background-color: black;
+  border-radius: 25px;
+
+  transition: background-color 0.5s ease, margin-left 0.5s ease;
+}
+
+.switch:hover {
+  box-shadow: 0 0 0 5px rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.switch:hover.dark-theme {
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+body.dark-theme {
+  background-color: black;
+}
+.switch.dark-theme {
+  border-color: white;
+}
+.switch-pin.dark-theme {
+  background-color: white;
+  margin-left: calc(100% - 32px);
+}
